@@ -22,4 +22,8 @@ class Employee
         response = self.class.post(PATHS['create'], body: payload)
         parsed = JSON.parse(response.parsed_response)
     end
+
+    def delete_employee(id)
+        self.class.delete(PATHS['delete'] + id)
+    end
 end

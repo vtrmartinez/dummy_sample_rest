@@ -9,6 +9,10 @@ Scenario: Create employee
 
 @delete_employee
 Scenario: Delete employee
-    Given I delete a employee
+    Given I delete a existent employee
+    When I search the employee deleted by id
+    Then I must not see the employee
+
+
 
 
