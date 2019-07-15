@@ -13,12 +13,14 @@ class Employee
         parsed = JSON.parse(response.parsed_response)
     end
 
-    def create_employee
+    def format_json_employee
         json = File.read('features/templates/post_create_employee.json')
         json_parsed = JSON.parse(json)
         json_parsed['name'] = Faker::Name.name
         payload = json_parsed.to_json
+    end
 
+    def create_employee(payload)
         response = self.class.post(PATHS['create'], body: payload)
         parsed = JSON.parse(response.parsed_response)
     end

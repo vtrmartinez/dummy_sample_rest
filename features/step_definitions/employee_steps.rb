@@ -1,5 +1,6 @@
 Given("I have a user created") do
-    @employee = @page.(Employee).create_employee
+    json = @page.(Employee).format_json_employee
+    @employee = @page.(Employee).create_employee(json)
 end
 
 Given("I delete a existent employee") do
