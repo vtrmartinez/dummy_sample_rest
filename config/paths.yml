@@ -1,0 +1,5 @@
+employees: '/employees'
+employee: '/employee/'
+create: '/create'
+update: '/update/'
+delete: '/delete/'
