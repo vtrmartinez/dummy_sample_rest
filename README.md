@@ -8,7 +8,7 @@ REST automation using Ruby and Httparty
 
 Given git has been installed, execute the command:
 ```
-git clone https://github.com/Kenoby-Labs/kenoby-aut-api.git
+git clone https://github.com/vtrmartinez/dummy_sample_rest
 ```
 
 <br>
